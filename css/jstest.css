@@ -1,0 +1,535 @@
+@charset "utf-8";
+
+body {
+  background-color: #fff8f3;
+  font-family: "Zen Maru Gothic", sans-serif;
+}
+
+.header {
+  width: 100%;
+  height: 88px;
+  padding: 24px 40px;
+
+  position: fixed; /* absolute → fixed */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+}
+
+.header-logo {
+  display: block;
+  width: 170px;
+}
+
+.site-menu {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.site-menu ul {
+  display: flex;
+  gap: 40px;
+}
+
+.site-menu a {
+  color: #23170d;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.site-menu a:hover {
+  color: #b88763;
+}
+
+/*トップ画像とその上のテキスト*/
+.hero-image {
+  position: relative;
+  width: 100%;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(90, 60, 35, 0.18);
+}
+
+.page-title {
+  font-family: "Zen Maru Gothic", sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 2;
+}
+
+.page-title h1 {
+  font-family: "Zen Maru Gothic", sans-serif;
+  margin-bottom: 10px;
+  color: #fffaf3;
+  font-size: 72px;
+  text-shadow: 0 3px 12px rgba(0, 0, 0, 0.3);
+}
+
+.page-title h1::after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 2px;
+  background: #fff;
+  margin: 18px auto;
+}
+
+.page-title p {
+  font-size: 24px;
+  color: #f5ece2;
+  letter-spacing: 4px;
+}
+
+.page-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
+/*トップ画像とその上のテキスト*/
+
+.toggle-menu-button {
+  display: none;
+}
+
+.flat-button {
+  color: var(--white);
+  font: var(--regular-16px);
+  background: #6f4e37;
+  border-radius: 30px;
+  padding: 14px 40px;
+  transition: 0.3s;
+}
+
+.flat-button:hover {
+  background: #8d6e63;
+  transform: scale(1.05);
+}
+
+.main2 {
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+
+#menu {
+  margin-top: +30px;
+}
+
+.contact-mail {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  margin: 40px auto;
+}
+
+.contact-mail-description {
+  max-width: 700px;
+  text-align: center;
+  line-height: 2.3;
+  font-size: 20px;
+  color: #5d4b3d;
+}
+
+#contact + .contact-mail-description {
+  margin-top: -20px;
+}
+
+.contact-mail-description p {
+  margin: 0;
+}
+
+.contact-mail-description::before {
+  display: block;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.contact-mail-description::after {
+  display: block;
+  margin-top: 25px;
+  font-size: 24px;
+}
+
+.page-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-title h1 {
+  font: var(--bold-64px);
+  color: white;
+}
+
+.page-title p {
+  font: var(--regular-18px);
+  color: white;
+}
+
+.section-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-title h2 {
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-size: 40px;
+  color: var(--black);
+}
+
+.section-title h2::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background: #8d6e63;
+  margin: 10px auto;
+}
+
+.section-title p {
+  font: var(--regular-14px);
+  color: var(--black);
+}
+
+.contact-title {
+  margin-bottom: 40px;
+}
+
+.tag {
+  font-family: "Zen Maru Gothic", sans-serif;
+  background-color: var(--gray);
+  padding: 2px 8px;
+  border-radius: 4px;
+  color: var(--black);
+  font: var(--regular-14px);
+}
+
+.contact-mail,
+.contact-form {
+  background: #fff8f3;
+  border-radius: 30px;
+  padding: 60px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Access */
+.access {
+  width: 100%;
+  padding: 80px 0;
+}
+
+.access-container {
+  max-width: 1000px;
+  margin: 70px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding: 0 20px;
+}
+
+.access-map img {
+  width: 450px;
+  border-radius: 12px;
+}
+
+.access-info {
+  line-height: 2;
+  font-size: 18px;
+}
+
+.access-info p {
+  margin-bottom: 20px;
+}
+
+.others {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.others-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1440px;
+  width: 100vw;
+  gap: 80px;
+  padding: 50px 50px;
+}
+
+.works-card {
+  display: flex;
+  flex: 1 1 auto;
+  min-width: 100px;
+  max-width: 200px;
+  flex-direction: column;
+  gap: 10px;
+  align-items: stretch;
+}
+
+.works-card {
+  width: 200px;
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.works-card:hover {
+  transform: translateY(-5px);
+}
+
+/* 英語名 */
+.menu-en {
+  font-size: 11px;
+  font-weight: 700;
+  color: #b08b6b;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+/* 日本語名 */
+.menu-ja {
+  min-height: 48px; /* 高さを揃える */
+  font-size: 18px;
+  font-weight: 700;
+  color: #2d2722;
+  line-height: 1.5;
+}
+
+/* 価格 */
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2d2722;
+}
+
+.menu-en,
+.menu-ja,
+.price {
+  margin: 0;
+}
+
+.card-text {
+  padding: 18px 24px 20px;
+}
+
+.works-container {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  gap: 64px;
+}
+
+.work-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.footer {
+  background-color: #8d6e63;
+  color: var(--white);
+  font: var(--regular-14px);
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.is-show {
+  display: block;
+}
+
+.is-hide {
+  display: none;
+}
+
+.is-bold {
+  font-weight: bold;
+}
+
+/*問い合わせフォーム*/
+.contact-form {
+  width: 100%;
+  max-width: 600px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.contact-form .flat-button {
+  align-self: center;
+  margin-top: 20px;
+}
+/*問い合わせフォーム*/
+
+@media (max-width: 800px) {
+  .header {
+    position: fixed;
+    background-color: var(--white);
+    box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.1);
+  }
+
+  .toggle-menu-button {
+    display: block;
+    width: 74px;
+    height: 74px;
+    background-image: url("../images/humburgermenu.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 0;
+    outline: none;
+  }
+
+  .header-site-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--white);
+    padding: 20px;
+    display: none;
+  }
+  .is-show {
+    display: block;
+  }
+
+  .site-menu {
+    flex-direction: column;
+    gap: 64px;
+  }
+  .site-menu ul {
+    flex-direction: column;
+    gap: 64px;
+  }
+
+  .site-menu ul li {
+    font: var(--regular-24px);
+  }
+
+  /*アクセス（スマホサイズ）*/
+  .access-container {
+    flex-direction: column;
+  }
+
+  .access-map img {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .access-info {
+    text-align: center;
+    font-size: 16px;
+  }
+  /*アクセス（スマホサイズ）*/
+
+  /*問い合わせフォーム（スマホサイズ）*/
+  .contact-form {
+    width: 90%;
+    max-width: 100%;
+    padding: 20px;
+    margin: 20px auto;
+    gap: 16px;
+  }
+
+  .form-group label {
+    font-size: 16px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .form-group textarea {
+    min-height: 120px;
+  }
+
+  .contact-form .flat-button {
+    width: 100%;
+    padding: 14px;
+  }
+  /*問い合わせフォーム*/
+}
