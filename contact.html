@@ -1,0 +1,268 @@
+```html id="8q2m7k"
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact | Tarte Café</title>
+    <meta
+      name="description"
+      content="Tarte Caféへのお問い合わせはこちらから。ご質問やご不明な点など、お気軽にお問い合わせください。"
+    />
+    <meta name="viewport" content="width=device-width" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="./css/global.css" rel="stylesheet" />
+    <link href="./css/jstest.css" rel="stylesheet" />
+
+    <meta property="og:url" content="https://8hwrm8.csb.app/contact.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Contact | Tarte Café" />
+    <meta
+      property="og:description"
+      content="Tarte Caféへのお問い合わせはこちらから。"
+    />
+    <meta
+      property="og:image"
+      content="https://8hwrm8.csb.app/images/ogp.jpg"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <a class="header-logo" href="index.html">
+        <img
+          src="./images/cafelogo.png"
+          width="90"
+          height="19"
+          alt="ロゴ"
+        />
+      </a>
+
+      <button class="toggle-menu-button"></button>
+
+      <div class="header-site-menu">
+        <nav class="site-menu">
+          <ul>
+            <li><a href="about.html">about</a></li>
+            <li><a href="menu.html">menu</a></li>
+            <li><a href="access.html">access</a></li>
+          </ul>
+
+          <a href="contact.html" class="flat-button">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main2">
+
+      <!-- ページトップ -->
+      <div class="hero-image">
+        <img
+          src="./images/contact.png"
+          alt="Tarte Caféの店内"
+        />
+
+        <div class="page-title">
+          <h1>Contact</h1>
+          <p>お問い合わせ</p>
+        </div>
+      </div>
+
+
+      <!-- Contact -->
+      <div class="contact-mail">
+
+        <div class="section-title">
+          <h2>contact</h2>
+          <p>お問い合わせ</p>
+        </div>
+
+        <div class="contact-mail-description">
+          <p id="message">
+            ご不明な点やご質問がございましたら、
+            下記のフォームよりお気軽にお問い合わせください。<br /><br />
+
+            内容を確認のうえ、
+            通常営業日2～3日以内にご返信させていただきます。<br /><br />
+
+            ※土日祝日・年末年始・夏季休業などは、
+            対応にお時間をいただく場合がございます。
+            あらかじめご了承ください。
+          </p>
+        </div>
+
+
+        <!-- Contact Form -->
+        <div class="section-title">
+          <h2>form</h2>
+          <p>お問い合わせフォーム</p>
+        </div>
+
+        <form class="contact-form">
+
+          <div class="form-group">
+            <label for="name">
+              お名前
+            </label>
+
+            <input
+              type="text"
+              id="name"
+              placeholder="氏名"
+            />
+          </div>
+
+
+          <div class="form-group">
+            <label for="email">
+              メールアドレス
+            </label>
+
+            <input
+              type="email"
+              id="email"
+              placeholder="example@email.com"
+            />
+          </div>
+
+
+          <div class="form-group">
+            <label for="phone">
+              電話番号
+            </label>
+
+            <input
+              type="tel"
+              id="phone"
+              placeholder="03-1234-5678"
+            />
+          </div>
+
+
+          <div class="form-group">
+            <label for="category">
+              お問い合わせ項目
+            </label>
+
+            <select id="category">
+              <option value="">選択してください</option>
+              <option value="menu">メニューについて</option>
+              <option value="shop">店舗について</option>
+              <option value="reservation">ご予約について</option>
+              <option value="allergy">アレルギーについて</option>
+              <option value="other">その他</option>
+            </select>
+          </div>
+
+
+          <div class="form-group">
+            <label for="subject">
+              お問い合わせ内容
+            </label>
+
+            <textarea
+              id="subject"
+              rows="6"
+              placeholder="お問い合わせ内容をご入力ください。"
+            ></textarea>
+          </div>
+
+
+          <div class="form-group">
+            <label for="privacy">
+              個人情報について
+            </label>
+
+            <p>
+              ご入力いただいた個人情報は、
+              お問い合わせへの回答および対応のためにのみ使用いたします。
+            </p>
+          </div>
+
+
+          <button
+            type="submit"
+            class="flat-button"
+          >
+            送信する
+          </button>
+
+        </form>
+
+
+        <!-- FAQ -->
+        <div class="section-title">
+          <h2>faq</h2>
+          <p>よくあるご質問</p>
+        </div>
+
+
+        <div class="contact-mail-description">
+
+          <p id="message">
+            <strong>Q. 予約はできますか？</strong><br />
+            A. 現在、席のご予約は承っておりません。
+            ご来店いただいた順番にご案内しております。
+          </p>
+
+          <p id="message">
+            <strong>Q. テイクアウトはできますか？</strong><br />
+            A. 一部の商品をテイクアウトでご利用いただけます。
+            詳しくはスタッフまでお問い合わせください。
+          </p>
+
+          <p id="message">
+            <strong>Q. アレルギー対応はできますか？</strong><br />
+            A. 原材料について確認いたしますので、
+            ご注文前にスタッフまでお気軽にお尋ねください。
+          </p>
+
+          <p id="message">
+            <strong>Q. 営業時間を教えてください。</strong><br />
+            A. 10:00～19:00です。
+            毎週水曜日が定休日となります。
+          </p>
+
+        </div>
+
+
+        <!-- Other Contact -->
+        <div class="section-title">
+          <h2>information</h2>
+          <p>お問い合わせ先</p>
+        </div>
+
+        <div class="contact-mail-description">
+          <p id="message">
+            Tarte Café<br /><br />
+
+            TEL：03-1234-5678<br />
+            営業時間：10:00～19:00<br />
+            定休日：水曜日
+          </p>
+        </div>
+
+      </div>
+    </main>
+
+
+    <footer class="footer">
+      <p class="cpyright">
+        <small>&copy;Tart Cafe</small>
+      </p>
+    </footer>
+
+    <script src="js/jstest.js"></script>
+  </body>
+</html>
+```
